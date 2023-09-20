@@ -7,10 +7,15 @@
     */
 
     //ENTRADA
-    
-
+    const quantidadeNotas = prompt('Quantas notas o aluno obteve')
+    let somaNotas = 0;
     //PROCESSAMENTO
-    
+    for (let notas = 1; notas <= quantidadeNotas; notas++) {
+        const novaNota = Number(prompt('Qual a nota do aluno'))
+        somaNotas = somaNotas + novaNota;
+    }
+
+    alert(`A média do aluno ${somaNotas / quantidadeNotas}`)
 
     //SAÍDA
 
