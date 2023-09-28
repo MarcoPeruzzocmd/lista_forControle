@@ -6,11 +6,15 @@
     */
 
     //ENTRADA
-
-    
+    let habitantes = 50000
     //PROCESSAMENTO
-    
-
+    for (let anos = 0; anos <= 10; anos++) {
+        habitantes = habitantes * 1.015    
+        if (anos == 5) {
+            alert(`A população daqui a 5 anos será ${habitantes}`)
+        }    
+    }
     //SAÍDA
+    alert(`A população daqui a 10 anos será ${habitantes}`)
 
 </script>
