@@ -5,11 +5,14 @@
     */
 
     //ENTRADA
-
-
+    let dias = 0
     //PROCESSAMENTO
-
-
+    for (let dinheiro = 1000; dinheiro <= 2000; dinheiro = dinheiro * 1.02) {
+        if (dinheiro < 2000) {
+            dias += 1
+        }
+    }
     //SAÍDA
+    alert(`Será necessário ${dias} dias para chegar a 2000`)
 
 </script>

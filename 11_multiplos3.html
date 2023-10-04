@@ -5,11 +5,16 @@
     */
 
     //ENTRADA
-
-
+    let calculo = 0;
+    let multiplos = [];
     //PROCESSAMENTO
-
-
+    for (let numeros = 1; numeros <= 100; numeros++) {
+        if (numeros % 3 == 0) {
+            calculo += numeros;
+            multiplos.push(numeros);
+        }
+    }
     //SAÍDA
+    alert(`Os múltiplos de 3 são: ${multiplos} e a soma é ${calculo}`)
 
 </script>

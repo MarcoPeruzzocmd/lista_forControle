@@ -16,13 +16,25 @@
     let votocand2 = 0
     let votocand3 = 0
     //PROCESSAMENTO
-    for (let votacao = 0; votacao <= ; votacao++) {
+    for (let votacao = 0; votacao <= alunos; votacao++) {
         let voto = prompt(`Você vai votar em qual candidato? 1-${candidato1}, 2-${candidato2} ou 3-${candidato3}`).toLowerCase()
         if (voto == candidato1 || voto == 1) {
             votocand1++
         }
-        else      
+        else if (voto == candidato2 || voto == 2) {
+            votocand2++                                   
+        }
+        else if (voto == candidato3 || voto == 3) {
+            votocand3++
+        }     
+        else {
+            alert('Candidato inválido')
+        } 
     }
+    let porcentagem1 = (votocand1 / alunos) * 100
+    let porcentagem2 = (votocand2 / alunos) * 100
+    let porcentagem3 = (votocand3 / alunos) * 100
     //SAÍDA
+    alert(`O resultado da eleição foi; \n ${candidato1}: ${porcentagem1}% com ${votocand1} de votos \n ${candidato2}: ${porcentagem2}% com ${votocand2} de votos \n ${candidato3}: ${porcentagem3}% com ${votocand3} de votos`)
 
 </script>
